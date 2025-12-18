@@ -106,7 +106,7 @@ const BooksDetail = () => {
         <Grid.Col span={{ base: 12, md: 4 }}>
           <InfoCard
             icon={<IconUser color="white" size={30} />}
-            label="Muallif"
+            label={t('books.author')}
             value={book?.author}
             style={{
               backgroundColor: '#030712',
@@ -118,7 +118,7 @@ const BooksDetail = () => {
         <Grid.Col span={{ base: 12, md: 4 }}>
           <InfoCard
             icon={<IconBuildingBank color="white" size={30} />}
-            label="Nashriyot"
+            label={t('books.publisher')}
             value={book?.publisher}
           />
         </Grid.Col>
@@ -126,7 +126,7 @@ const BooksDetail = () => {
         <Grid.Col span={{ base: 12, md: 4 }}>
           <InfoCard
             icon={<IconCopy color="white" size={30} />}
-            label="Mavjud nusxalar"
+            label={t('books.hasCopies')}
             accent={
               <Badge
                 style={{
