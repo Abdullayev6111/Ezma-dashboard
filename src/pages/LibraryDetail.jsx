@@ -208,7 +208,7 @@ const LibrariesDetail = () => {
                     <Table.Td c="white">{book.author || "Noma'lum"}</Table.Td>
                     <Table.Td c="white">{book.publisher || "Noma'lum"}</Table.Td>
                     <Table.Td ta="right" c="blue.3" fw={600}>
-                      {book.quantity_in_library || 1} ta
+                      {book.quantity_in_library || 1} {t('libraries.pcs')}
                     </Table.Td>
                   </Table.Tr>
                 ))
