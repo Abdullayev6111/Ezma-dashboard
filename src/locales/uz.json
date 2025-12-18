@@ -1,0 +1,71 @@
+{
+  "aside": {
+    "libraries": "Kutubxonalar",
+    "books": "Kitoblar",
+    "addLibrary": "Kutubxona qo'shish",
+    "logoutBtn": "Chiqish"
+  },
+  "profile": {
+    "loadErr": "Profil yuklashda xatolik bor",
+    "name": "Ism",
+    "phone": "Telefon",
+    "profileSave": "Saqlash",
+    "profileEdit": "Tahrirlash"
+  },
+  "libraries": {
+    "activate": "Faollashtirish",
+    "deactivate": "O'chirish",
+    "active": "Faol",
+    "deactive": "Nofaol",
+    "error": "Xatolik yuz berdi",
+    "liked": "Sevimli",
+    "booksMany": "Ko'p kitoblar",
+    "library": "Kutubxona",
+    "state": "Holat",
+    "address": "Manzil",
+    "allBooks": "Jami kitoblar",
+    "deeds": "Amallar",
+    "search": "Qidirish...",
+    "pcs": "ta"
+  },
+  "books": {
+    "copy": "nusxa",
+    "copies": "nusxalar",
+    "allBooks": "Barcha kitoblar",
+    "bookName": "Kitob nomi",
+    "author": "Muallif",
+    "publisher": "Nashriyot",
+    "hasCopies": "Mavjud nusxalar",
+    "searchByName": "Kitob nomi bo'yicha qidirish"
+  },
+  "notification": {
+    "successTitle": "Muaffaqiyatli!",
+    "successMessage": "Kutubxona muaffaqiyatli qo'shildi",
+    "errorTitle": "Xatolik",
+    "errorMessage": "Yaratihda xatolik yuz berdi",
+    "mapMessage": "Xaritadan joylashuvni belgilang"
+  },
+  "addNewLibrary": {
+    "userInfo": "Foydalanuvhci ma'lumoti",
+    "libraryInfo": "Kutubxona ma'lumoti",
+    "socials": "Ijtimoiy tarmoqlar",
+    "isRent": "Kitob ijarasi mavjudmi?",
+    "resetBtn": "Qaytadan boshlash",
+    "addBtn": "Qo'shish",
+    "phoneNumber": "Telefon raqamini kiriting",
+    "userName": "Foydalanuvhci ismini kiriting",
+    "addPassword": "Parol kiriting",
+    "phone": "Telefon",
+    "name": "Ism",
+    "password": "Parol",
+    "address": "Manzil",
+    "lat": "Kenglik",
+    "long": "Uzunlik",
+    "nameMust": "Ism toldirish shart",
+    "phoneMust": "Telefon raqam to'ldirish shart",
+    "passwordMust": "Parol kamida 6ta raqam bo'lishi shart",
+    "addressMust": "Manzil tanlanishi shart",
+    "latMust": "Kenglik to'ldirish shart",
+    "longMust": "Uzunlik to'ldirish shart"
+  }
+}

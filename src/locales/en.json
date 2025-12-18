@@ -1,0 +1,71 @@
+{
+  "aside": {
+    "libraries": "Libraries",
+    "books": "Books",
+    "addLibrary": "Add Library",
+    "logoutBtn": "Logout"
+  },
+  "profile": {
+    "loadErr": "Error loading profile",
+    "name": "Name",
+    "phone": "Phone",
+    "profileSave": "Save",
+    "profileEdit": "Edit"
+  },
+  "libraries": {
+    "activate": "Activate",
+    "deactivate": "Deactivate",
+    "active": "Active",
+    "deactive": "Inactive",
+    "error": "Error occurred",
+    "liked": "Liked",
+    "booksMany": "Many books",
+    "library": "Library",
+    "state": "State",
+    "address": "Address",
+    "allBooks": "All books",
+    "deeds": "Actions",
+    "search": "Search...",
+    "pcs": "pcs"
+  },
+  "books": {
+    "copy": "copy",
+    "copies": "copies",
+    "allBooks": "All books",
+    "bookName": "Book name",
+    "author": "Author",
+    "publisher": "Publisher",
+    "hasCopies": "Available copies",
+    "searchByName": "Search by book name"
+  },
+  "notification": {
+    "successTitle": "Success!",
+    "successMessage": "Library added successfully",
+    "errorTitle": "Error",
+    "errorMessage": "An error occurred while creating",
+    "mapMessage": "Select location from map"
+  },
+  "addNewLibrary": {
+    "userInfo": "User information",
+    "libraryInfo": "Library information",
+    "socials": "Social media",
+    "isRent": "Is book rental available?",
+    "resetBtn": "Reset",
+    "addBtn": "Add",
+    "phoneNumber": "Enter phone number",
+    "userName": "Enter user name",
+    "addPassword": "Enter password",
+    "phone": "Phone",
+    "name": "Name",
+    "password": "Password",
+    "address": "Address",
+    "lat": "Latitude",
+    "long": "Longitude",
+    "nameMust": "Name is required",
+    "phoneMust": "Phone number is required",
+    "passwordMust": "Password must be at least 6 characters",
+    "addressMust": "Address is required",
+    "latMust": "Latitude is required",
+    "longMust": "Longitude is required"
+  }
+}
