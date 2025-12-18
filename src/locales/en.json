@@ -67,5 +67,22 @@
     "addressMust": "Address is required",
     "latMust": "Latitude is required",
     "longMust": "Longitude is required"
+  },
+  "libraryDetail": {
+    "goBack": "Go back",
+    "aboutLibrary": "About library",
+    "address": "Address",
+    "phone": "Phone",
+    "socials": "Social media",
+    "booksInLibrary": "Books in library",
+    "piece": "Piece",
+    "noBooksAvailable": "No books available"
+  },
+  "bookDetail": {
+    "backToBooks": "Back to books",
+    "deleteBook": "Delete book",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirm": "Are you sure you want to delete this book?"
   }
 }

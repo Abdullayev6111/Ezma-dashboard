@@ -67,5 +67,22 @@
     "addressMust": "Manzil tanlanishi shart",
     "latMust": "Kenglik to'ldirish shart",
     "longMust": "Uzunlik to'ldirish shart"
+  },
+  "libraryDetail": {
+    "goBack": "Orqaga",
+    "aboutLibrary": "Kutubxona haqida ma'lumot",
+    "address": "Manzil",
+    "phone": "Telefon",
+    "socials": "Ijtimoiy tarmoqlar",
+    "booksInLibrary": "Kutubxonadagi kitoblar",
+    "piece": "Soni",
+    "noBooksAvailable": "Kitoblar mavjud emas"
+  },
+  "bookDetail": {
+    "backToBooks": "Kitoblarga qaytish",
+    "deleteBook": "Kitobni o'chirish",
+    "cancel": "Bekor qilish",
+    "delete": "O'chirish",
+    "confirm": "Ushbu kitobni o'chirishni tasdiqlaysizmi?"
   }
 }

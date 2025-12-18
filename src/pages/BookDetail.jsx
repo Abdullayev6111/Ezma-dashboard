@@ -24,6 +24,7 @@ import {
   IconTrash,
 } from '@tabler/icons-react';
 import API from '../api/API';
+import { useTranslation } from 'react-i18next';
 
 const InfoCard = ({ icon, label, value, accent }) => (
   <Paper
@@ -52,6 +53,7 @@ const InfoCard = ({ icon, label, value, accent }) => (
 );
 
 const BooksDetail = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   const navigate = useNavigate();
   const [opened, { open, close }] = useDisclosure(false);
@@ -88,7 +90,7 @@ const BooksDetail = () => {
         leftSection={<IconArrowLeft size={16} />}
         mb="xl"
       >
-        Kitoblarga qaytish
+        {t('bookDetail.backToBooks')}
       </Button>
 
       <Group mb="lg">
@@ -142,7 +144,7 @@ const BooksDetail = () => {
                 radius="xl"
                 size="lg"
               >
-                {book?.quantity_in_library} nusxa
+                {book?.quantity_in_library} {t('books.copy')}
               </Badge>
             }
           />
@@ -151,10 +153,10 @@ const BooksDetail = () => {
         <Grid.Col span={{ base: 12, md: 4 }}>
           <InfoCard
             icon={<IconBuildingBank color="white" size={30} />}
-            label="Kutubxona"
+            label={t('libraries.library')}
             accent={
               <Text fw={600} c="violet">
-                Kutubxona №{book?.library}
+                {t('libraries.library')} №{book?.library}
               </Text>
             }
           />
@@ -165,22 +167,22 @@ const BooksDetail = () => {
 
       <Group justify="flex-end">
         <Button color="violet" leftSection={<IconTrash size={16} />} onClick={open}>
-          Kitobni o'chirish
+          {t('bookDetail.deleteBook')}
         </Button>
       </Group>
 
-      <Modal opened={opened} onClose={close} centered title="Kitobni o'chirish">
-        <Text mb="md">Ushbu kitobni o'chirishni tasdiqlaysizmi?</Text>
+      <Modal opened={opened} onClose={close} centered title={t('bookDetail.deleteBook')}>
+        <Text mb="md">{t('bookDetail.confirm')}</Text>
         <Group justify="flex-end">
           <Button variant="default" onClick={close}>
-            Bekor qilish
+            {t('bookDetail.cancel')}
           </Button>
           <Button
             color="red"
             loading={deleteMutation.isLoading}
             onClick={() => deleteMutation.mutate()}
           >
-            O'chirish
+            {t('bookDetail.delete')}
           </Button>
         </Group>
       </Modal>

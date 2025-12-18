@@ -20,9 +20,11 @@ import {
 } from '@tabler/icons-react';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 import API from './../api/API';
+import { useTranslation } from 'react-i18next';
 
 const LibrariesDetail = () => {
   const { id } = useParams();
+  const { t } = useTranslation();
 
   const { data: libraryData, isLoading } = useQuery({
     queryKey: ['library', id],
@@ -60,7 +62,7 @@ const LibrariesDetail = () => {
           }}
         >
           <IconArrowLeft size={18} />
-          Orqaga
+          {t('libraryDetail.goBack')}
         </Link>
       </Group>
 
@@ -71,13 +73,13 @@ const LibrariesDetail = () => {
               <Group align="center" gap="md" mb="lg">
                 <IconInfoCircle size={20} color="#8b5cf6" />
                 <Title order={4} c="white">
-                  Kutubxona haqida ma'lumot
+                  {t('libraryDetail.aboutLibrary')}
                 </Title>
               </Group>
               <Stack gap="md">
                 <Group align="flex-start" wrap="nowrap">
                   <Text size="sm" fw={600} c="dimmed" style={{ minWidth: 90 }}>
-                    Manzil:
+                    {t('libraryDetail.address')}:
                   </Text>
                   <Text size="sm" c="white">
                     {library?.address ||
@@ -86,7 +88,7 @@ const LibrariesDetail = () => {
                 </Group>
                 <Group align="flex-start" wrap="nowrap">
                   <Text size="sm" fw={600} c="dimmed" style={{ minWidth: 90 }}>
-                    Telefon:
+                    {t('libraryDetail.phone')}:
                   </Text>
                   <Text size="sm" c="white">
                     {phone}
@@ -99,7 +101,7 @@ const LibrariesDetail = () => {
               <Group align="center" gap="md" mb="lg">
                 <IconInfoCircle size={20} color="#8b5cf6" />
                 <Title order={4} c="white">
-                  Ijtimoiy tarmoqlar
+                  {t('libraryDetail.socials')}
                 </Title>
               </Group>
               <Stack gap="lg">
@@ -124,7 +126,7 @@ const LibrariesDetail = () => {
           <Group align="center" gap="md" mb="lg">
             <IconMapPin size={20} color="#8b5cf6" />
             <Title order={4} c="white">
-              Manzil
+              {t('libraryDetail.address')}
             </Title>
           </Group>
           <div style={{ height: 400, borderRadius: '0.5rem', overflow: 'hidden' }}>
@@ -151,8 +153,8 @@ const LibrariesDetail = () => {
           style={{ background: '#030712', padding: '20px ', borderRadius: 10 }}
         >
           <Text size="lg" fw={700} c="white">
-            <i style={{ color: '#6d28d9', fontSize: 40 }} className="fa-solid fa-book"></i> Jami
-            kitoblar
+            <i style={{ color: '#6d28d9', fontSize: 40 }} className="fa-solid fa-book"></i>{' '}
+            {t('libraries.allBooks')}
           </Text>
           <Badge color="purple" size="xl" radius="md">
             {totalBooks}
@@ -169,7 +171,7 @@ const LibrariesDetail = () => {
       >
         <Group p="xl" pb={0}>
           <Title order={4} p="md" c="white">
-            Kutubxonadaagi kitoblar
+            {t('libraryDetail.booksInLibrary')}
           </Title>
         </Group>
         <ScrollArea h={400} type="hover" scrollbarSize={10}>
@@ -177,16 +179,16 @@ const LibrariesDetail = () => {
             <Table.Thead className="library-detail-table">
               <Table.Tr>
                 <Table.Th c="dimmed" fw={600}>
-                  Nomi
+                  {t('books.bookName')}
                 </Table.Th>
                 <Table.Th c="dimmed" fw={600}>
-                  Muallif
+                  {t('books.author')}
                 </Table.Th>
                 <Table.Th c="dimmed" fw={600}>
-                  Nashriyot
+                  {t('books.publisher')}
                 </Table.Th>
                 <Table.Th c="dimmed" fw={600} ta="right">
-                  Soni
+                  {t('libraryDetail.piece')}
                 </Table.Th>
               </Table.Tr>
             </Table.Thead>
@@ -194,7 +196,7 @@ const LibrariesDetail = () => {
               {books.length === 0 ? (
                 <Table.Tr>
                   <Table.Td colSpan={4} ta="center" c="dimmed" py="xl">
-                    Kitoblar mavjud emas
+                    {t('libraryDetail.noBooksAvailable')}
                   </Table.Td>
                 </Table.Tr>
               ) : (
@@ -203,8 +205,8 @@ const LibrariesDetail = () => {
                     <Table.Td c="white" fw={500}>
                       {book.name}
                     </Table.Td>
-                    <Table.Td c="white">{book.author || 'Nomaʼlum'}</Table.Td>
-                    <Table.Td c="white">{book.publisher || 'Nomaʼlum'}</Table.Td>
+                    <Table.Td c="white">{book.author || "Noma'lum"}</Table.Td>
+                    <Table.Td c="white">{book.publisher || "Noma'lum"}</Table.Td>
                     <Table.Td ta="right" c="blue.3" fw={600}>
                       {book.quantity_in_library || 1} ta
                     </Table.Td>

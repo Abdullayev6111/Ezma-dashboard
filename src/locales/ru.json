@@ -67,5 +67,22 @@
     "addressMust": "Адрес обязателен",
     "latMust": "Широта обязательна",
     "longMust": "Долгота обязательна"
+  },
+  "libraryDetail": {
+    "goBack": "Назад",
+    "aboutLibrary": "О библиотеке",
+    "address": "Адрес",
+    "phone": "Телефон",
+    "socials": "Социальные сети",
+    "booksInLibrary": "Книги в библиотеке",
+    "piece": "Штука",
+    "noBooksAvailable": "Книги отсутствуют"
+  },
+  "bookDetail": {
+    "backToBooks": "Книгам",
+    "deleteBook": "Удалить книгу",
+    "cancel": "Отмена",
+    "delete": "Удалить",
+    "confirm": "Вы уверены, что хотите удалить эту книгу?"
   }
 }
