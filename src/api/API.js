@@ -2,7 +2,7 @@ import axios from 'axios';
 import useAuthStore from '../store/useAuthStore';
 
 const API = axios.create({
-  baseURL: "https://org-ave-jimmy-learners.trycloudflare.com/api/v1",
+  baseURL: 'https://infections-plays-sewing-finding.trycloudflare.com/api/v1',
 });
 
 API.interceptors.request.use((config) => {
