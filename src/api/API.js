@@ -2,7 +2,7 @@ import axios from 'axios';
 import useAuthStore from '../store/useAuthStore';
 
 const API = axios.create({
-  baseURL: 'https://infections-plays-sewing-finding.trycloudflare.com/api/v1',
+  baseURL: 'https://infections-plays-sewing-finding.trycloudflare.com/swagger/api/v1',
 });
 
 API.interceptors.request.use((config) => {
@@ -18,7 +18,7 @@ API.interceptors.response.use(
       logoutAndRedirect();
     }
     return Promise.reject(error);
-  }
+  },
 );
 
 function logoutAndRedirect() {
